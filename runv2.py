@@ -135,7 +135,7 @@ async def call_api(url, data, proxy, token):
             headers=headers, 
             proxies=parsed_proxies,
             timeout=30,
-            impersonate="chrome131"
+            impersonate="safari15_5"
         )
 
         return valid_resp(response.json())
