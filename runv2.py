@@ -38,7 +38,7 @@ RETRIES = 60
 
 DOMAIN_API = {
     "SESSION": "http://api.nodepay.ai/api/auth/session",
-    "PING": "https://nw.nodepay.org/api/network/ping"
+    "PING": "https://nw.nodepay.ai/api/network/ping"
 }
 
 CONNECTION_STATES = {
@@ -135,7 +135,7 @@ async def call_api(url, data, proxy, token):
             headers=headers, 
             proxies=parsed_proxies,
             timeout=30,
-            impersonate="safari15_5"
+            impersonate="chrome110"
         )
 
         return valid_resp(response.json())
